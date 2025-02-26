@@ -1,0 +1,26 @@
+
+*{
+    padding:0;
+    margin:0;
+}
+
+button{
+    background-color:#27A863;
+    color:white;
+    padding:10px 15px;
+    border-radius: 10px;
+}
+
+img{
+    width:70px;
+}
+
+.flex{
+    display:flex;
+        flex-direction:row;
+}
+
+.card{
+    display:flex;
+    flex-direction:row;
+}
