@@ -4,37 +4,120 @@
     margin:0;
 }
 
-button{
+
+/*************header***************/
+
+nav{
+    height: 100px;
+}
+
+#logo{
+    width:200px;
+    margin: 0 20px 0 0;
+}
+
+li :active{
+    color:#27A863;
+}
+
+img{
+    width:40px;
+    margin:0 5px 0 0
+}
+
+/*************main******************/
+main{
+    margin:40px;
+}
+
+h1{
+    padding-bottom:50px;
+}
+
+/**************cards****************/
+.flex{
+    display:flex;
+    
+}
+
+.card{
+   padding: 50px;
+    margin: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/***************Form***************/
+
+#contactForm {
+    display: none; 
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.showForm{
     background-color:#27A863;
     padding:10px 15px;
     border:1px solid #27A863;
     border-radius: 10px;
     color:#fff;
+    margin:10px 850px;
+    width:300px;
+}
+
+#contactForm.visible {
+    display: flex; 
+    flex-direction: column; 
+}
+
+
+#contactForm label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    display: block; 
+}
+
+#contactForm input,
+#contactForm textarea,
+#contactForm button {
+    padding: 10px;
+    margin-bottom: 12px; 
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+    font-size: 16px; 
+}
+
+
+#contactForm button {
+    display:block;
+    background-color: #27A863; 
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 button:hover{
     background-color:#007438;
 }
 
-a{
-    color:white;
+#contactForm button:hover {
+    background-color: #007438; 
+}
+
+/*************footer**************/
+footer{
+    background-color:#D7C8C3;
+    height:100px;
+    margin:133px 0 0 0;
+}
+
+.link{
+    color:#000;
     text-decoration:none;
-}
-
-img{
-    width:70px;
-}
-
-.flex{
     display:flex;
-        flex-direction:row;
+    justify-content: center;
+    padding-top:5px;
 }
 
-.card{
-    display:flex;
-    flex-direction:row;
-}
-
-#contactForm {
-    display: none;
-}

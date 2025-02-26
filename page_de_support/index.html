@@ -16,7 +16,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <img src="./assets/logo_cmsdi.png" alt="logo cmsdi" />
+          <img id="logo" src="./assets/logo_cmsdi.png" alt="logo cmsdi" />
           <button
             class="navbar-toggler"
             type="button"
@@ -97,16 +97,15 @@
                   <li><a class="dropdown-item" href="#">Nos références</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Support</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Support</a>
               </li>
             </ul>
-            <button class="showForm">Demande de contact</button>
           </div>
         </div>
       </nav>
     </header>
-    <section>
+    <main>
       <h1>Page de support</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rhoncus
@@ -122,53 +121,73 @@
         sed. Aenean elit massa, lacinia suscipit interdum a, scelerisque at
         lorem.
       </p>
-    </section>
+    </main>
     <div class="flex">
       <div class="card">
-        <h3>Téléphone</h3>
+        <h3><img src="./assets/appel.png" alt="téléphone" />Téléphone</h3>
         <p>
           Nam ornare ullamcorper semper. Aliquam erat volutpat. Nulla facilisi.
           Phasellus scelerisque faucibus porta. Nunc vestibulum, velit et
           imperdiet ultricies, lorem sem consectetur eros, ultrices malesuada
-          nisi risus sed sapien. Integer hendrerit sodales est.<br />
-          Tel : 0123456789
+          nisi risus sed sapien. Integer hendrerit sodales est.<br /><br />
+          Tel : 01.23.45.67.89
         </p>
-        <h3>Courriel</h3>
+      </div>
+      <div class="card">
+        <h3><img src="./assets/email.png" alt="courriel" />Courriel</h3>
         <p>
           Ut non accumsan mi. Cras quis porttitor est. Mauris cursus est et urna
           facilisis rhoncus. Fusce nec eros ac urna dignissim mollis sed sit
           amet odio. Praesent aliquam fringilla porttitor. Morbi molestie nisi
           vitae tempor ultricies. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Sed elementum in ex quis vulputate.<br />
-          Courriel : contact@cmsdi.fr
+          adipiscing elit. Sed elementum in ex quis vulputate.<br /><br />
+          Courriel : <a href="mailto:contact@cmsdi.fr">contact@cmsdi.fr</a>
         </p>
-        <h3>Prise en main à distance</h3>
+      </div>
+      <div class="card">
+        <h3>
+          <img src="./assets/curseur-main.png" alt="prise en main" />Prise en
+          main à distance
+        </h3>
         <p>
           Morbi fringilla erat nulla, non maximus erat lobortis vitae. Nulla
           pellentesque tincidunt rhoncus. Nam elementum dignissim dolor ut
           sodales. Ut lobortis elit eget lacus venenatis faucibus. Cras diam
-          nunc, congue ac dictum id, aliquam nec tortor.<br />
+          nunc, congue ac dictum id, aliquam nec tortor.<br /><br />
           Télécharger : <a href="http://">lien vers TeamViewer</a>
         </p>
       </div>
     </div>
     <button class="showForm">Demande de contact</button>
     <form id="contactForm" type="submit" action="" method="post">
-      <label for="lastname">Nom :</label>
+      <label for="lastname" pattern="^[A-Za-z]$" required>Nom :</label>
       <input type="text" />
-      <label for="firstname">Prénom :</label>
+      <label for="firstname" pattern="^[A-Za-z]$" required>Prénom :</label>
       <input type="text" />
-      <label for="company">Collectivité / Entreprise :</label>
+      <label for="company" pattern="^[A-Za-z0-9]$" required
+        >Collectivité / Entreprise :</label
+      >
       <input type="text" />
-      <label for="phone">Téléphone :</label>
-      <input type="number" />
-      <label for="email">Courriel :</label>
+      <label for="phone" required pattern="^(\+33|0)[1-9](\d{2}){10}$"
+        >Téléphone :</label
+      >
+      <input type="tel" />
+      <label
+        for="email"
+        required
+        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        >Courriel :</label
+      >
       <input type="email" />
       <label for="message">Message :</label>
       <textarea name="message-content" id="message-content"></textarea>
       <button>Envoyer</button>
     </form>
-    <footer></footer>
+    <footer>
+      <a class="link" href="#">Mentions légales</a>
+      <a class="link" href="#">Conditions générales de ventes</a>
+      <a class="link" href="#">Plan du site</a>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -8,15 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const showFormButton = document.querySelector(".showForm");
         const contactForm = document.getElementById("contactForm");
 
-   
-        showFormButton.addEventListener("click", function () {
-          if (
-            contactForm.style.display === "none" ||
-            contactForm.style.display === ""
-          ) {
-            contactForm.style.display = "block";
-          } else {
-            contactForm.style.display = "none";
-          }
-        });
-      });
+        showFormButton.addEventListener('click', function() {
+
+        if (contactForm.classList.contains('visible')) {
+            contactForm.classList.remove('visible'); 
+        } else {
+            contactForm.classList.add('visible');
+        }
+    });
+
+    });
