@@ -22,9 +22,9 @@ test réalisation d'une page web de support
 - réalisation du menu de navigation en dropdown
 - affichage du formulaire au clic (et disparition au clic également)
 - sécurisation du formulaire  :
-        - des champs obligatoires
-        - regex
-        - typage des inputs
+        ### des champs obligatoires
+        ### regex
+        ### typage des inputs
 - récupération d'icônes au format SVG
   
   
